@@ -1,0 +1,271 @@
+*{
+    margin: o;
+    padding: o;
+}
+
+
+body{
+    background-color: rgb(213, 213, 213);
+    font-family:'Raleway', sans-serif;
+}
+
+/* Estilo titulo*/
+h1{
+    color: whitesmoke;
+    font-family:'Just Another Hand', cursive;
+    font-size: 100px;    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
+.container .container__descripcion {
+    color: #bc5492;
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+    bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+
+}
+
+
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 25px;
+    display: inline;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding:  0 20px;
+    z-index: 100;
+}
+
+
+.header h2 {
+    font-family: 'Just Another Hand', cursive;
+    color: rgb(175, 119, 149);
+    width: 100%;
+    font-size: 45px;
+}
+
+.header .header__nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header .header__nav .header__nav__menu {
+    display: flex;
+    margin-right: 0px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.header__nav__menu .header__nav__menu__nav-item {
+    background-color: rgb(175, 119, 149);
+    list-style: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.header__nav__menu__nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.hero {
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/Screenshot_unas.negras~2.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p {
+    color: rgb(175, 119, 149);
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 50px;
+    padding: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/*Galeria Grid*/
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contenedor de la Grid y Animaciones*/
+
+.galeria_grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+
+.galeria_grid .img-box span {
+    position: absolute;
+    bottom: 50px;
+    left: 350px;
+    color: white;
+}
+
+.galeria_grid .img-box{
+    position: relative;
+}
+
+.galeria_grid .img-box img {
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+.galeria_grid .img-box img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+
+}
+/*Media Queries*/
+
+@media screen and (max-width:768px) {
+    .galeria_grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .galeria_grid{
+        grid-template-rows: repeat(2,1fr);
+    }
+    .galeria_grid{
+        text-align: center;
+    }
+    .galeria_grid img{
+        width: 100%;
+    }
+    .container__descripcion {
+        flex-direction: column;
+    }
+
+    .container__descripcion {
+        width: 100%;
+    }
+    .container__descripcion {
+        margin-bottom: 100px;
+    }
+        
+    .hero {
+        width: 100%;      
+    }
+    .hero {
+        background-position: center center;
+    }
+    .header {
+        height: 60px;
+    }
+    .header h2 {
+    font-size: 30px;
+    }
+    .header .header__nav__menu {
+        display: flex;
+    }
+    .header__nav__menu .header__nav__menu__nav-item {
+        margin-left: 5px;
+    }
+    .header__nav__menu .header__nav__menu__nav-item {
+        padding: 1px 10px;
+    }
+    .header__nav__menu__nav-item a {
+        font-size: 15px;
+    }
+    }
+    
+
+
+@media screen and (max-width:480px) {
+    .galeria_grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .galeria_grid {
+        grid-template-rows: repeat(1,1fr);
+    }
+    .galeria_grid{
+        text-align: center;
+    }
+    .galeria_grid img{
+        width: 70%;
+    }
+   .contenedor h2{
+    font-size: 12px;
+    }
+    .container .container__descripcion {
+        flex-direction: column;
+    }
+    .container .container__descripcion{
+        width: 100%;
+    }
+    .container .container__descripcion {
+        font-size: 15px;
+    }.header {
+        height: 60px;
+    }
+    .header h2 {
+        font-size: 24px;
+    }
+    .header .header__nav__menu__nav-item a {
+        font-size: 9px;
+    }
+    .header .header__nav__menu__nav-item {
+        padding: 0px 5px;
+    }
+    .header .header__nav__menu__nav-item {
+        margin-left: 5px;
+    }
+    
+    .header .header__nav__menu {
+        display: flex;
+    }
+    .hero h1{
+        width: 100%;
+    }
+    .hero h1{
+        height: 10px;
+    }
+    .hero h1{
+        font-size: 500%;
+    }
+    .hero p{
+        margin-top: 60px;
+    }
+    }
+  
+
+ 
