@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: rgb(213, 213, 213);
+    background-color: #C9ADA7;
     font-family:'Raleway', sans-serif;
 }
 
@@ -22,7 +22,7 @@ h1{
     display: flex;
 }
 .container .container__descripcion {
-    color: #bc5492;
+    color: whitesmoke;
     font-family:'Raleway', sans-serif;
     text-align: center;
     bottom: 50px;
@@ -41,55 +41,6 @@ ul{
 ul li{
     padding: 25px;
     display: inline;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-    padding:  0 20px;
-    z-index: 100;
-}
-
-
-.header h2 {
-    font-family: 'Just Another Hand', cursive;
-    color: rgb(175, 119, 149);
-    width: 100%;
-    font-size: 45px;
-}
-
-.header .header__nav {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-.header .header__nav .header__nav__menu {
-    display: flex;
-    margin-right: 0px;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.header__nav__menu .header__nav__menu__nav-item {
-    background-color: rgb(175, 119, 149);
-    list-style: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-.header__nav__menu__nav-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
 }
 
 .hero {
@@ -188,25 +139,7 @@ ul li{
     .hero {
         background-position: center center;
     }
-    .header {
-        height: 60px;
-    }
-    .header h2 {
-    font-size: 30px;
-    }
-    .header .header__nav__menu {
-        display: flex;
-    }
-    .header__nav__menu .header__nav__menu__nav-item {
-        margin-left: 5px;
-    }
-    .header__nav__menu .header__nav__menu__nav-item {
-        padding: 1px 10px;
-    }
-    .header__nav__menu__nav-item a {
-        font-size: 15px;
-    }
-    }
+    
     
 
 
@@ -234,24 +167,6 @@ ul li{
     }
     .container .container__descripcion {
         font-size: 15px;
-    }.header {
-        height: 60px;
-    }
-    .header h2 {
-        font-size: 24px;
-    }
-    .header .header__nav__menu__nav-item a {
-        font-size: 9px;
-    }
-    .header .header__nav__menu__nav-item {
-        padding: 0px 5px;
-    }
-    .header .header__nav__menu__nav-item {
-        margin-left: 5px;
-    }
-    
-    .header .header__nav__menu {
-        display: flex;
     }
     .hero h1{
         width: 100%;
@@ -267,5 +182,3 @@ ul li{
     }
     }
   
-
- 
