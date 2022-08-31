@@ -9,13 +9,16 @@ body{
     font-family:'Raleway', sans-serif;
 }
 
+
 /* Estilo titulo*/
 h1{
-    color: whitesmoke;
-    font-family:'Just Another Hand', cursive;
-    font-size: 100px;    
-    text-align: center;
-    margin-bottom: 10px;
+    color: black;
+    background-color: #f2e9e4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;    
+    text-align:left;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -31,22 +34,20 @@ h1{
     margin-left: 50px;
     margin-right: 50px;
     font-size: 20px;
-
 }
 
 
-ul{
+/*ul{
     list-style: none;
 }
 ul li{
     padding: 25px;
     display: inline;
-}
-
+}*/
 .hero {
     width: 100%;
     height: 550px;
-    background-image: url(../img/Screenshot_unas.negras~2.png);
+    background-image: url(../img//InShot_20220829_012536150.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -55,7 +56,7 @@ ul li{
     align-items: center;
 }
 
-.hero p {
+/*.hero p {
     color: rgb(175, 119, 149);
     font-family:'Raleway', sans-serif;
     text-align: center;
@@ -64,7 +65,7 @@ ul li{
     padding: 25px;
     margin-left: 100px;
     margin-right: 100px;
-}
+}¨/
 
 
 /*Galeria Grid*/
@@ -75,21 +76,51 @@ ul li{
     justify-content: center;
     align-items: center;
 }
+/*Pagina Esculpidas*/
+.contenedor-2 h2{
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.contenedor-2{
+    width: 100%;
+    background-color: #f2e9e4;
+    display: flex;
+    text-align: center;
+    
+}
+.contenedor-esculp{
+    width: 100%;
+    height: 500px;
+    background-color: #C9ADA7;
+    margin-inline: 2px;
+    font-size: 16px;
+}
+.contenedor-esculp p{
+    margin: 50px;
+}
+.img img{
+
+    width: 180px;
+    height: 180px;
+    margin: 50px;
+    margin-left: 220px;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+.img img:hover{
+    transform: scale(1.4);
+    opacity: 1;
+}
 
 /*Contenedor de la Grid y Animaciones*/
 
 .galeria_grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
     gap: 10px;
-}
-
-.galeria_grid .img-box span {
-    position: absolute;
-    bottom: 50px;
-    left: 350px;
-    color: white;
 }
 
 .galeria_grid .img-box{
@@ -97,6 +128,9 @@ ul li{
 }
 
 .galeria_grid .img-box img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 45px;
     border-radius: 20px;
     opacity: 0.7;
     transition: all 1.5s;
@@ -105,7 +139,11 @@ ul li{
 .galeria_grid .img-box img:hover {
     transform: scale(1.1);
     opacity: 1;
-
+}
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 /*Media Queries*/
 
@@ -118,10 +156,12 @@ ul li{
     }
     .galeria_grid{
         text-align: center;
+
     }
-    .galeria_grid img{
-        width: 100%;
+    .galeria_grid .img-box img{
+        margin-left: 6px;
     }
+
     .container__descripcion {
         flex-direction: column;
     }
@@ -139,6 +179,36 @@ ul li{
     .hero {
         background-position: center center;
     }
+    /*Página Esculpidas*/
+    .img img{
+        width: 100px;
+    }
+    .img img{
+        margin: 40px;
+    }
+    .img img{
+        margin-left: 100px;
+    }
+    .img img{
+        border-radius: 50%;
+    }
+    .contenedor-esculp{
+        width: 100%;
+    }
+    .contenedor-esculp{
+        font-size: 10px;
+    }
+    .contenedor-esculp{
+        height: 400px;
+    }
+    .contenedor-esculp p{
+        margin: 10px;
+    }
+    .contenedor-2 h2{
+        font-size: 20px;
+    }
+
+}
     
     
 
@@ -180,5 +250,38 @@ ul li{
     .hero p{
         margin-top: 60px;
     }
+    /*Pagina Esculpidas*/
+    h1{
+        font-size: 18px;
     }
-  
+    .contenedor-esculp{
+        height: 400px;
+    }
+    .contenedor-esculp{
+        margin-inline: 1px;
+    }
+    .contenedor-2{
+        width: 100%;
+    }
+    .contenedor-2 h2{
+        font-size: 15px;
+    }
+    .contenedor-2 h2{
+        margin-top: 25px;
+    }
+    .img img{
+        width: 100px;
+    }
+    .img img{
+        height: 100px;
+    }
+    .img img{
+        margin: 15px;
+    }
+    .img img{
+        margin-left: 40px;
+    }
+    .img img{
+        border-radius: 50%;
+    }
+}

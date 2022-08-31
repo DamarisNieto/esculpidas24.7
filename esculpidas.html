@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Raleway&display=swap" rel="stylesheet">
 
@@ -16,16 +17,83 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Esculpidas</h1>
-    <p class="violeta">Las uñas esculpidas son extenciones que se construyen a partir de la uña natural con material acrílico o gel.</p>
-        <p class="violeta">Estas permiten restaurar y reconstruir uñas mordidas o simplemente, lucir uñas más largas. A lgo que las hace sumanente atractivas, ya que se puede moldear la forma y longitud para obtener varios estilos
+    <!-- Menu Bootstrap--> }
+<nav class="navbar fixed-top navbar-expand-lg" style="background-color:#C9ADA7;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Esculpidas 24.7</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" style="background-color: #C9ADA7;">
+              <li><a class="dropdown-item" href="./esculpidas.html">Esculpidas</a></li>
+              <li><a class="dropdown-item" href="./semipermanente.html">Semipermanente</a></li>
+              <li><a class="dropdown-item" href="./kapping.html">Kapping</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-        </p>
+    <h1>Uñas Esculpidas</h1>
 
-    <section>
+    <div class="img">
         <img src="/img/Screenshot_20220804-190358esculpbabycolor[1188].png">
-    
-    </section>   
+        <img src="img/Screenshot_20220804-185718esculpysemipermanante[1191].png">
+        <img src="img/uñas-negras.png">
+    </div>
+<section>
+    <!--p class="violeta">Las uñas esculpidas son extenciones que se construyen a partir de la uña natural con material acrílico o gel.</p>
+        <p class="violeta">Estas permiten restaurar y reconstruir uñas mordidas o simplemente, lucir uñas más largas. A lgo que las hace sumanente atractivas, ya que se puede moldear la forma y longitud para obtener varios estilos</p-->
+            
+            
+            
+            <main>
+                <section class="contenedor-2">
+                <div class="contenedor-esculp">
+                    <h2>Uñas de acrilico</h2>
+                    <p>La manicura para uñas acrílicas se puede realizar mediante puntas o moldes, son complementarias al uso de productos para uñas acrílicas o de gel. Este tipo de uñas también se pueden hacer con gel. Los acrílicos deberían durar de seis a ocho semanas, dependiendo del cuidado y su mantenimiento; por lo tanto, requerirá un relleno cada dos o tres semanas, dependiendo del crecimiento de las uñas. El mantenimiento de las uñas acrílicas se realiza cada 15 a 20 días, siempre dependiendo del crecimiento de tu uña.</p>
+                    <!--section class="img"
+                        <img src="/img/Screenshot_20220804-190358esculpbabycolor[1188].png"--/section-->
+                    </div>
+                    <div class="contenedor-esculp">
+                    <h2>Uñas de gel</h2>
+                    <p>Son una de las uñas esculpidas más solicitadas por su brillo y flexibilidad, lo que las vuelve bastante resistentes y duraderas. Para hacerlas se usa un esmalte con gran cantidad de gel, y se aplica como un esmaltado común pero es necesario secarlo con una lámpara UV entre capa y capa.
+                        Tienen una duración de 15 a 20 días, el esmaltado no se salta y para quitarlas hay que usar un solvente especial para uñas de gel.</p>
+                    </div>
+                    <div class="contenedor-esculp">
+                        <h2>Uñas de porcelana</h2>
+                        <p>Actualmente las uñas llamadas de porcelana que se consiguen son las elaboradas con una mezcla de gel y acrílico, se deben secar con lámpara de rayos UV y tienen una resistencia mayor que sus predecesoras.
+                            Bien cuidadas, llegan a durar unos 6 meses, pero requieren de mantenimiento cada 15 días para rellenarlas. Hay que tener cuidado de que no se astillen porque pueden lesionar la uña que está debajo.</p>
+                    </div>
+                </div>
+            </section>
+            </main>
 
+<footer>Copy 2022</footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
