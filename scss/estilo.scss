@@ -1,0 +1,72 @@
+$colorletras: whitesmoke;
+$colorfondo: #C9ADA7;
+$estiloletra: 'Raleway', sans-serif;
+
+body{
+    background-color: $colorfondo;
+    font-family: $estiloletra;
+
+    .hero { 
+        h1 {
+            width: 100%;
+            height: 550px;
+            background-image: url(../img//InShot_20220829_012536150.jpg);
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .container{
+        display: flex;
+        .container__descripcion {
+                color: $colorletras;
+                font-family: $estiloletra;
+                text-align: center;
+                bottom: 50px;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+                font-size: 20px;
+        }
+    }
+    .contenedor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .galeria_grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            gap: 10px;
+            .img-box{
+                position: relative;
+                img{
+                    max-width: 90%;
+                    max-height: 90%;
+                    margin-left: 45px;
+                    border-radius: 20px;
+                    opacity: 0.7;
+                    transition: all 1.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        color:$colorletras;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+   
+   

@@ -9,7 +9,6 @@ body{
     font-family:'Raleway', sans-serif;
 }
 
-
 /* Estilo titulo*/
 h1{
     color: black;
@@ -36,14 +35,6 @@ h1{
     font-size: 20px;
 }
 
-
-/*ul{
-    list-style: none;
-}
-ul li{
-    padding: 25px;
-    display: inline;
-}*/
 .hero {
     width: 100%;
     height: 550px;
@@ -56,18 +47,6 @@ ul li{
     align-items: center;
 }
 
-/*.hero p {
-    color: rgb(175, 119, 149);
-    font-family:'Raleway', sans-serif;
-    text-align: center;
-    margin-top:0px;
-    margin-bottom: 50px;
-    padding: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
-}¨/
-
-
 /*Galeria Grid*/
 .contenedor{
     width: 100%;
@@ -76,6 +55,33 @@ ul li{
     justify-content: center;
     align-items: center;
 }
+/*Contenedor de la Grid y Animaciones*/
+
+.galeria_grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+}
+
+.galeria_grid .img-box{
+    position: relative;
+}
+
+.galeria_grid .img-box img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 45px;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: all 1.5s;
+}
+
+.galeria_grid .img-box img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 /*Pagina Esculpidas*/
 .contenedor-2 h2{
     font-size: 20px;
@@ -114,32 +120,7 @@ ul li{
     opacity: 1;
 }
 
-/*Contenedor de la Grid y Animaciones*/
 
-.galeria_grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
-    gap: 10px;
-}
-
-.galeria_grid .img-box{
-    position: relative;
-}
-
-.galeria_grid .img-box img {
-    max-width: 90%;
-    max-height: 90%;
-    margin-left: 45px;
-    border-radius: 20px;
-    opacity: 0.7;
-    transition: all 1.5s;
-}
-
-.galeria_grid .img-box img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
 footer{
     padding-top: 50px;
     padding-bottom: 50px;

@@ -1,0 +1,24 @@
+{
+  "name": "esculpidas_24.7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamarisNieto/esculpidas24.7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamarissNieto/esculpidas24.7/issues"
+  },
+  "homepage": "https://github.com/DamarisNieto/esculpidas24.7#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
