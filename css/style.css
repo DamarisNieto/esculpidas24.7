@@ -9,17 +9,6 @@ body{
     font-family:'Raleway', sans-serif;
 }
 
-/* Estilo titulo*/
-h1{
-    color: black;
-    background-color: #f2e9e4;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;    
-    text-align:left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .container {
     display: flex;
 }
@@ -32,7 +21,7 @@ h1{
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .hero {
@@ -84,7 +73,7 @@ h1{
 
 /*Pagina Esculpidas*/
 .contenedor-2 h2{
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-top: 100px;
     font-weight: bold;
 }
@@ -100,7 +89,7 @@ h1{
     height: 500px;
     background-color: #C9ADA7;
     margin-inline: 2px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .contenedor-esculp p{
     margin: 50px;
@@ -110,7 +99,7 @@ h1{
     width: 180px;
     height: 180px;
     margin: 50px;
-    margin-left: 220px;
+    margin-left: 250px;
     border-radius: 50%;
     opacity: 0.7;
     transition: all 1.5s;
@@ -126,6 +115,7 @@ footer{
     padding-bottom: 50px;
     text-align: center;
 }
+
 /*Media Queries*/
 
 @media screen and (max-width:768px) {
@@ -153,7 +143,9 @@ footer{
     .container__descripcion {
         margin-bottom: 100px;
     }
-        
+    .container .container__descripcion{
+        font-size: 1rem;
+    }
     .hero {
         width: 100%;      
     }
@@ -163,6 +155,9 @@ footer{
     /*Página Esculpidas*/
     .img img{
         width: 100px;
+    }
+    .img img{
+        height: 130px;
     }
     .img img{
         margin: 40px;
@@ -177,16 +172,25 @@ footer{
         width: 100%;
     }
     .contenedor-esculp{
-        font-size: 10px;
+        font-size: 0.9rem;
     }
     .contenedor-esculp{
-        height: 400px;
+        height: 500px;
+    }
+    .contenedor-esculp p{
+        font-size: 0.9rem;
     }
     .contenedor-esculp p{
         margin: 10px;
     }
     .contenedor-2 h2{
-        font-size: 20px;
+        font-size: 1.2rem;
+    }
+    .contenedor-2 h2{
+        margin-top: 50px;
+    }
+    .contenedor-2 h2{
+        margin-bottom: 30px;
     }
 
 }
@@ -236,10 +240,13 @@ footer{
         font-size: 18px;
     }
     .contenedor-esculp{
-        height: 400px;
+        height: 450px;
     }
     .contenedor-esculp{
         margin-inline: 1px;
+    }
+    .contenedor-esculp p{
+        font-size: 0.7rem;
     }
     .contenedor-2{
         width: 100%;
@@ -249,6 +256,9 @@ footer{
     }
     .contenedor-2 h2{
         margin-top: 25px;
+    }
+    .img{
+        margin-top: 50px;
     }
     .img img{
         width: 100px;
