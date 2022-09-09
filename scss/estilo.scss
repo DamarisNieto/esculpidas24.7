@@ -2,6 +2,7 @@ $colorletras: whitesmoke;
 $colorfondo: #C9ADA7;
 $estiloletra: 'Raleway', sans-serif;
 
+
 body{
     background-color: $colorfondo;
     font-family: $estiloletra;
@@ -61,12 +62,21 @@ body{
             }
         }
     }
-    footer{
+    /*footer{
         color:$colorletras;
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
-    }
+    }*/
 }
-   
-   
+
+.footer{
+    color: $colorfondo;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+}
+p{
+    @extend .footer;
+    background-color: black;
+}

@@ -12,6 +12,7 @@ body{
 .container {
     display: flex;
 }
+
 .container .container__descripcion {
     color: whitesmoke;
     font-family:'Raleway', sans-serif;
@@ -72,17 +73,16 @@ body{
 }
 
 /*Pagina Esculpidas*/
-.contenedor-2 h2{
-    font-size: 1.3rem;
-    margin-top: 100px;
-    font-weight: bold;
-}
 .contenedor-2{
     width: 100%;
     background-color: #f2e9e4;
     display: flex;
     text-align: center;
-    
+}
+.contenedor-2 h2{
+    font-size: 1.3rem;
+    margin-top: 100px;
+    font-weight: bold;
 }
 .contenedor-esculp{
     width: 100%;

@@ -1,6 +1,12 @@
 body {
   background-color: #C9ADA7;
   font-family: "Raleway", sans-serif;
+  /*footer{
+      color:$colorletras;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+  }*/
 }
 body .hero h1 {
   width: 100%;
@@ -55,9 +61,14 @@ body .contenedor .galeria_grid .img-box img:hover {
   transform: scale(1.1);
   opacity: 1;
 }
-body footer {
-  color: whitesmoke;
+
+.footer, p {
+  color: #C9ADA7;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+}
+
+p {
+  background-color: black;
 }/*# sourceMappingURL=estilo.css.map */
