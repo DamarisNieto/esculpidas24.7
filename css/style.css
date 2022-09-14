@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #C9ADA7;
+    background-color: white;
     font-family:'Raleway', sans-serif;
 }
 
@@ -109,7 +109,98 @@ body{
     opacity: 1;
 }
 
+/*Pagina Semipermanente*/
+h1{
+    color: rgb(86, 84, 84);
+    font-family:'Just Another Hand', cursive;
+    font-size: 50px;    
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+.tarjeta{
+    padding: 6rem;
+    padding-top: 0;
+}
+.tarjeta__1{
+    background-color: #C9ADA7;
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 15px 15px 30px black;
+}
+.tarjeta__left{
+    flex: 1;
+    min-width: 0;
+}
+.tarjeta__left img{
+    width: 100%;
+}
+.tarjeta__right { 
+    padding-block: 80px;
+    flex: 1;
+    min-width: 0;
+}
+.tarjeta__right p{
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.contenedor{
+    display: flex;
+}
+.contenedor__semi{
+    color: black;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+.contenedor__semi h2{
+    color:  #C9ADA7;
+    font-size: 50px;
+    font-family: 'Just Another Hand', cursive;
+    margin-left: 30px;  
+}
+.contenedor__semi .ul{
+    display: none;
+}
+.contenedor__semi .li{
+    padding: 1.2rem;
+}
 
+/*Kappig*/
+.tarjeta__kapping{
+    padding: 6rem;
+    padding-top: 0;
+}
+.tarjeta__kapping__1{
+    background-color: #C9ADA7;
+    width: 80%;
+    display: flex;
+    padding: 1rem;
+    margin: 50px;
+    margin-left: 9rem;
+    box-shadow: 15px 15px 30px black;
+    text-align: center;
+}
+.tarjeta__kapping__left {
+    flex: 1;
+    min-width: 0;
+}
+.tarjeta__kapping__left img{
+    width: 60%;
+}
+.tarjeta__kapping__right {
+    flex: 1;
+    min-width: 0;
+    padding-block: 80px;
+}
+.tarjeta__kapping__right p{
+    color: black;
+    font-size: 15px;
+}
 footer{
     padding-top: 50px;
     padding-bottom: 50px;

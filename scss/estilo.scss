@@ -1,82 +1,259 @@
-$colorletras: whitesmoke;
-$colorfondo: #C9ADA7;
-$estiloletra: 'Raleway', sans-serif;
+@import 'fonts';
+@import 'animaciones&t';
+@import 'color&bg';
+@import 'positions';
+@import 'size';
 
 
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+ /*Index*/
 body{
-    background-color: $colorfondo;
+    background-color: $bgFondo;
     font-family: $estiloletra;
-
     .hero { 
         h1 {
-            width: 100%;
-            height: 550px;
+            width: $width;
+            height: $height;
             background-image: url(../img//InShot_20220829_012536150.jpg);
-            background-position: center center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-position: $bgPosit;
+            background-size: $bgSize;
+            display: $display;
+            flex-direction: $flexD;
+            justify-content: $JC;
+            align-items: $AI;
+            margin: $margin;
         }
     }
     .container{
-        display: flex;
-        .container__descripcion {
-                color: $colorletras;
+        display: $display;
+        background-color: $colorletras;
+        margin-top: $marginT-1;
+        margin-bottom: $marginB-2;
+        .container__descripcion p{
+                color: $colorletras-3;
                 font-family: $estiloletra;
-                text-align: center;
-                bottom: 50px;
-                margin-top: 100px;
-                margin-bottom: 100px;
-                margin-left: 50px;
-                margin-right: 50px;
-                font-size: 20px;
+                text-align: $TA;
+                bottom: $btm-1;
+                margin-top: $marginT-2;
+                margin-bottom: $marginB-1;
+                margin-left: $marginL-1;
+                margin-right: $marginR-1;
+                font-size: $FZ-1;
         }
     }
     .contenedor{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: $width;
+        display: $display;
+        flex-direction: $flexD;
+        justify-content: $JC;
+        align-items: $AI;
         .galeria_grid{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(1,1fr);
-            gap: 10px;
+            display: $display-G;
+            grid-template-columns: $gridTColums;
+            grid-template-rows: $gridTRows;
+            gap: $gap;
             .img-box{
-                position: relative;
+                position: $position;
                 img{
-                    max-width: 90%;
-                    max-height: 90%;
-                    margin-left: 45px;
-                    border-radius: 20px;
-                    opacity: 0.7;
-                    transition: all 1.5s;
+                    max-width: $maxW;
+                    max-height: $maxH;
+                    margin-left: $marginL-2;
+                    border-radius: $bRadius;
+                    opacity: $opacity-1;
+                    transition: $transition-1;
                     &:hover{
-                        transform: scale(1.1);
-                        opacity: 1;
+                        transform: $transform-1;
+                        opacity: $opacity-2;
                     }
                 }
             }
         }
     }
-    /*footer{
+    footer{
         color:$colorletras;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        text-align: center;
-    }*/
+        padding-top: $paddingT;
+        padding-bottom: $paddingB;
+        text-align: $TA;
+    }
 }
 
-.footer{
-    color: $colorfondo;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        text-align: center;
+/*Esculpidas*/
+body{
+    h1{
+        font-family: $estiloletra-2;
+        color: $colorletras-2;
+        font-size: $FZ-1;    
+        text-align: $TA;
+        margin-top: $marginT-3;
+        margin-bottom: $marginB-4;
+    }
+    .img{
+        img{
+            width: $width-4;
+            height: $height-2;
+            margin: $margin-2;
+            margin-left: $marginL-6;
+            border-radius: $bRadius-2;
+            opacity: $opacity-1;
+            transition: $transition-1;
+            &:hover{
+                transform: $transform-2;
+                opacity: $opacity-2}
+
+            }
+        }
+    }
+    .contenedor-2{
+        width: 100%;
+        background-color: #f2e9e4;
+        display: $display;
+        text-align: $TA;
+        .contenedor-esculp{
+            width: $width;
+            height: $height-3;
+            background-color: $bgFondo;
+            margin-inline: $marginInL;
+            font-size: $FZ-3;
+            p{
+                margin: $margin-2;
+            }
+            h2{
+                font-size: $FZ-5;
+                margin-top: $marginT-1;
+                font-weight: $fWeight;
+            }
+        }
+    }
+    footer{
+        color:$colorletras;
+        padding-top: $paddingT;
+        padding-bottom: $paddingB;
+        text-align: $TA;
+    }
+
+
+/*Semi*/
+body{
+    background-color: $bgFondo;
+    font-family: $estiloletra;
+    h1{
+        color: $colorletras-2;
+        font-family: $estiloletra-2;
+        font-size: $FZ-2;  
+        text-align: $TA-2;
+        margin-top: $marginT-2;
+        margin-left: $marginL-3;
+        margin-bottom: $marginB-2;
+    }
+    .tarjeta{
+        padding: $padding;
+        padding-top: $paddingT-1;
+        .tarjeta__1{
+            background-color: $bgFondo;
+            display: $display;
+            padding: $padding-2;
+            text-align: $TA;
+            box-shadow: $boxSh;
+            .tarjeta__left{
+                flex: $flex;
+                min-width: $mWidth;
+                img{
+                    width: $width;
+                }
+            }
+            .tarjeta__right { 
+                padding-block: $paddingBlk;
+                flex: $flex;
+                min-width: $mWidth;
+                .tarjeta__right p{
+                    color: $colorletras-3;
+                    font-size: $FZ-3;
+                    margin-left: $marginL-4;
+                }
+            }
+        }
+    }
+    .contenedor{
+        display: $display;
+        .contenedor__semi{
+            color: $colorletras-3;
+            background-color: $colorletras;
+            margin-top: $marginT-3;
+            margin-bottom: $marginB-3;
+            padding: $padding-4;
+            h2{
+                color: $bgFondo;
+                font-size: $FZ-2;
+                font-family: $estiloletra-2;
+            }
+            .ul{
+                list-style: none;
+                .li{
+                    padding: $padding-3;
+                    display: inline;
+                }
+            }
+        }
+    }
+    footer{
+        color:$colorletras-3;
+        padding-top: $paddingT;
+        padding-bottom: $paddingB;
+        text-align: $TA;
+    }
 }
-p{
-    @extend .footer;
-    background-color: black;
+
+/*Kapping*/
+body{
+    background-color: $bgFondo;
+    font-family: $estiloletra;
+    h1{
+        color: $colorletras-2;
+        font-family: $estiloletra-2;
+        font-size: $FZ-2;  
+        text-align: $TA-2;
+        margin-top: $marginT-2;
+        margin-left: $marginL-3;
+        margin-bottom: $marginB-2;
+    }
+    .tarjeta__kapping{
+        padding: $padding;
+        padding-top: $paddingT-1;
+        .tarjeta__kapping__1{
+            background-color: $bgFondo;
+            width: $width-2;
+            display: $display;
+            padding: $padding-5;
+            margin: $margin-2;
+            margin-left: $marginL-5;
+            box-shadow: $boxSh;
+            text-align: $TA;
+            .tarjeta__kapping__left {
+                flex: $flex;
+                min-width: $mWidth;
+                img{
+                    width: $width-3;
+                }
+            }
+            .tarjeta__kapping__right {
+                flex: $flex;
+                min-width: $mWidth;
+                padding-block: $paddingBlk;
+                p{
+                    color: $colorletras-3;
+                    font-size: $FZ-4;
+                }
+            }
+        }
+    }
+    footer{
+        color:$colorletras-3;
+        padding-top: $paddingT;
+        padding-bottom: $paddingB;
+        text-align: $TA;
+    }
 }

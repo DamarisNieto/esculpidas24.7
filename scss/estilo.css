@@ -1,12 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*Index*/
 body {
   background-color: #C9ADA7;
   font-family: "Raleway", sans-serif;
-  /*footer{
-      color:$colorletras;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      text-align: center;
-  }*/
 }
 body .hero h1 {
   width: 100%;
@@ -18,16 +18,20 @@ body .hero h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 body .container {
   display: flex;
+  background-color: rgb(233, 228, 228);
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
-body .container .container__descripcion {
-  color: whitesmoke;
+body .container .container__descripcion p {
+  color: black;
   font-family: "Raleway", sans-serif;
   text-align: center;
   bottom: 50px;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
@@ -61,14 +65,183 @@ body .contenedor .galeria_grid .img-box img:hover {
   transform: scale(1.1);
   opacity: 1;
 }
-
-.footer, p {
-  color: #C9ADA7;
+body footer {
+  color: rgb(233, 228, 228);
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
 
-p {
-  background-color: black;
+/*Esculpidas*/
+body h1 {
+  font-family: "Just Another Hand", cursive;
+  color: rgb(86, 84, 84);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+body .img img {
+  width: 180px;
+  height: 180px;
+  margin: 50px;
+  margin-left: 250px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: all 1.5s;
+}
+body .img img:hover {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+.contenedor-2 {
+  width: 100%;
+  background-color: #f2e9e4;
+  display: flex;
+  text-align: center;
+}
+.contenedor-2 .contenedor-esculp {
+  width: 100%;
+  height: 500px;
+  background-color: #C9ADA7;
+  margin-inline: 2px;
+  font-size: 1rem;
+}
+.contenedor-2 .contenedor-esculp p {
+  margin: 50px;
+}
+.contenedor-2 .contenedor-esculp h2 {
+  font-size: 1.3rem;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+footer {
+  color: rgb(233, 228, 228);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*Semi*/
+body {
+  background-color: #C9ADA7;
+  font-family: "Raleway", sans-serif;
+}
+body h1 {
+  color: rgb(86, 84, 84);
+  font-family: "Just Another Hand", cursive;
+  font-size: 50PX;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+body .tarjeta {
+  padding: 6rem;
+  padding-top: 0;
+}
+body .tarjeta .tarjeta__1 {
+  background-color: #C9ADA7;
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 15px 15px 30px black;
+}
+body .tarjeta .tarjeta__1 .tarjeta__left {
+  flex: 1;
+  min-width: 0;
+}
+body .tarjeta .tarjeta__1 .tarjeta__left img {
+  width: 100%;
+}
+body .tarjeta .tarjeta__1 .tarjeta__right {
+  padding-block: 80px;
+  flex: 1;
+  min-width: 0;
+}
+body .tarjeta .tarjeta__1 .tarjeta__right .tarjeta__right p {
+  color: black;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+body .contenedor {
+  display: flex;
+}
+body .contenedor .contenedor__semi {
+  color: black;
+  background-color: rgb(233, 228, 228);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+body .contenedor .contenedor__semi h2 {
+  color: #C9ADA7;
+  font-size: 50PX;
+  font-family: "Just Another Hand", cursive;
+}
+body .contenedor .contenedor__semi .ul {
+  list-style: none;
+}
+body .contenedor .contenedor__semi .ul .li {
+  padding: 1.2rem;
+  display: inline;
+}
+body footer {
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*Kapping*/
+body {
+  background-color: #C9ADA7;
+  font-family: "Raleway", sans-serif;
+}
+body h1 {
+  color: rgb(86, 84, 84);
+  font-family: "Just Another Hand", cursive;
+  font-size: 50PX;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+body .tarjeta__kapping {
+  padding: 6rem;
+  padding-top: 0;
+}
+body .tarjeta__kapping .tarjeta__kapping__1 {
+  background-color: #C9ADA7;
+  width: 80%;
+  display: flex;
+  padding: 1rem;
+  margin: 50px;
+  margin-left: 9rem;
+  box-shadow: 15px 15px 30px black;
+  text-align: center;
+}
+body .tarjeta__kapping .tarjeta__kapping__1 .tarjeta__kapping__left {
+  flex: 1;
+  min-width: 0;
+}
+body .tarjeta__kapping .tarjeta__kapping__1 .tarjeta__kapping__left img {
+  width: 60%;
+}
+body .tarjeta__kapping .tarjeta__kapping__1 .tarjeta__kapping__right {
+  flex: 1;
+  min-width: 0;
+  padding-block: 80px;
+}
+body .tarjeta__kapping .tarjeta__kapping__1 .tarjeta__kapping__right p {
+  color: black;
+  font-size: 15px;
+}
+body footer {
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }/*# sourceMappingURL=estilo.css.map */
